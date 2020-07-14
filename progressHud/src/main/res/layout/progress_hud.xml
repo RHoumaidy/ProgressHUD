@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/progress_hud_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="20dp">
+    
+    <com.raafat.progresshud.ProgressHUDView
+        android:id="@+id/spinnerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.ramijemli.percentagechartview.PercentageChartView
+        android:id="@+id/view_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:pcv_mode="ring"
+        android:visibility="gone"
+        app:pcv_orientation="counter_clockwise"
+        app:pcv_animDuration="800"
+        app:pcv_animInterpolator="anticipate_overshoot"
+        app:pcv_progress="10"
+        app:pcv_progressBarThickness="3dp"
+        app:pcv_backgroundBarThickness="4dp"
+        app:pcv_startAngle="90"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Message"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
